@@ -1,0 +1,540 @@
+ 
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ---- Meta Tags ---- -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ 
+    <!-- ---- Bootstrap CSS ---- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+ 
+    <!-- ---- Custom CSS ---- -->
+    <link rel="stylesheet" href="css/main.css" />
+ 
+    <!-- ---- Font Awesome ---- -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+ 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+ 
+    <title>The Daft Collective</title>
+  </head>
+  <body class="text-white" style="background-color: #1f1919;">
+    <!-- ---- Navbar ---- -->
+    <nav class="navbar navbar-expand-lg navbar-dark p-4 fixed-top">
+        <div class="container">
+            <a
+                href="index.html"
+                class="navbar-brand d-flex align-items-center justify-content-between order-lg-0"
+            >
+                <img src="images/logo.png" alt="Site Icon" height="50px" width="100px" />
+                <span id="brand-name"></span>
+            </a>
+
+            <div class="nav-btns order-lg-2">
+                <button class="btn position-relative" type="button">
+                    <i class="fa fa-shopping-cart" style="color: #ffffff;"></i>
+                    <span
+                        class="badge position-absolute top-0 bg-danger translate-middle start-100"
+                        >0</span
+                    >
+                </button>
+                <button class="btn position-relative" type="button">
+                    <i class="fa fa-heart" style="color: #ffffff;"></i>
+                    <span
+                        class="badge position-absolute top-0 bg-danger translate-middle start-100"
+                        >0</span
+                    >
+                </button>
+                <button class="btn" type="button">
+                    <i class="fa fa-search" style="color: #ffffff;"></i>
+                </button>
+            </div>
+
+            <button
+                class="navbar-toggler border-0"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navMenu"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a href="#" class="nav-link" style="color: #ffffff;">HOME</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#collection" class="nav-link" style="color: #ffffff;">COLLECTION</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#specials" class="nav-link" style="color: #ffffff;">SPECIALS</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#blogs" class="nav-link" style="color: #ffffff;">BLOGS</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a href="#about-us" class="nav-link" style="color: #ffffff;">ABOUT ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+ 
+    <!-- ---- Hero ---- -->
+    <section
+      id="hero"
+      class="vh-100 carousel slide"
+      data-bs-ride="carousel"
+      style="padding-top: 104px"
+    >
+      <div class="container carousel-inner h-100 d-flex align-items-center">
+        <div class="carousel-item text-center active">
+            <h2 class="text-white">Come Shop with us!</h2>
+            <h1 class="text-white py-2 fw-bold">Transform Your Wardrobe with Us</h1>
+            <a href="#" class="btn">Shop Now</a>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="text-white">Best Price & Offer</h2>
+          <h1 class="text-white py-2 fw-bold">Clothes that are Cool</h1>
+          <a href="#" class="btn">Browse Shop</a>
+        </div>
+        <div class="carousel-item text-center">
+          <h2 class="text-white">Exclusive Offer: 20% Off Your First Purchase</h2>
+          <h1 class="text-white py-2 fw-bold">DISCOUNTS</h1>
+          <a href="#" class="btn">Claim Your Discount</a>
+        </div>
+ 
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-slide="prev"
+          data-bs-target="#hero"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-slide="next"
+          data-bs-target="#hero"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+ 
+    <!-- ---- Collection ---- -->
+    <section id="collection" class="py-5">
+      <div class="container">
+        <div class="title text-center">
+          <h2 class="position-relative d-inline-block">New Collection</h2>
+        </div>
+        <div class="container text-center py-5">
+            <div class="row align-items-start">
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/wrangler.jpg" class="card-img-top" alt="wrangler" style="margin-bottom: -25px;">
+                    <div class="card-body">
+                      <h5 class="card-title">Wrangler</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;749.99</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/dickies.jpg" class="card-img-top" alt="..." >
+                    <div class="card-body">
+                      <h5 class="card-title">Dickies</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;649.99</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/jnco.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">JNCO</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;949.99</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col">
+                <div class="card" style="width: 18rem;" >
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/levis.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Levi's</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;349.99</a>
+                    </div>
+                  </div>
+              </div>
+              <div div class = "col py-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/dockers.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Dockers</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;549.99</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col py-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/evisu.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Evisu</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;649.99</a>
+                    </div>
+                  </div>
+              </div>
+              <div class="col py-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/chaps.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Chaps</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;149.99</a>
+                    </div>
+                  </div>
+              </div><div class="col py-5">
+                <div class="card" style="width: 18rem;">
+                  <div class="position-absolute top-0 start-100 text-bg-secondary translate-middle badge border border-light rounded-circle bg-danger p-2">
+                    Sale
+                    </div>
+                    <img src="images/izod.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                      <h5 class="card-title">Izod</h5>
+                      <a href="#" class="btn btn-primary"class="fw-bold">&#8369;249.99</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+          
+        </div>
+      </div>
+    </section>
+    
+    <!-- Specials -->
+    <section id="specials" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">Specials</h2>
+        </div>
+      </div>
+ 
+      <div class="row">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="images/aape.jpg"
+              alt="special 1"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart" style="color: #A91D3A;"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Aape</p>
+            <span class="fw-bold d-block">&#8369; 1,500</span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="images/needlework.jpg"
+              alt="special 1"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart" style="color: #A91D3A;"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Needlework</p>
+            <span class="fw-bold d-block">&#8369; 1,500</span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="images/enyce.jpg"
+              alt="special 1"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart" style="color: #A91D3A;"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Enyce</p>
+            <span class="fw-bold d-block">&#8369; 1,500</span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+ 
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img
+              src="images/veins.jpg  "
+              alt="special 1"
+              class="w-100"
+            />
+            <span
+              class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4"
+            >
+              <i class="fa fa-heart" style="color: #A91D3A;"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Veins</p>
+            <span class="fw-bold d-block">&#8369; 1,500</span>
+            <a href="#" class="btn btn-primary mt-3">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Banner -->
+    <section id="banner" class="py-5">
+      <div class="container">
+        <div class="row d-flex align-items-center">
+          <div class="banner-content">
+            <span class="text-white">Discount Up to 50%</span>
+            <h2 class="mt-2">Grand Sale Offer</h2>
+            <a href="#" class="btn border-0">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Blogs Section -->
+    <section id="blogs" class="py-5">
+      <div class="container">
+        <div class="title text-center py-5">
+          <h2 class="position-relative d-inline-block">Our Latest Blog</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="card border-0" style="color: #151515;">
+              <img src="images/blog1.jpg" class="card-img-top" alt="blog 1" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  The Hundreds and LA Kings Unveil Korean Heritage Day Collection
+                </h4>
+                <p class="card-text mt-3 text-muted">
+                  The Hundreds and the Los Angeles Kings have teamed up for a collaboration celebrating Korean Heritage Day. Set for a March 23 release, the collection includes a T-shirt, long sleeve and hoodie that pay tribute to both Korean heritage and the shared passion of sports and streetwear.</p>
+                <p class="card-text">
+                  <small class="text-muted">Author:</small> Sophie Caraan
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="card border-0">
+              <img src="images/blog2.jpg" class="card-img-top" alt="blog 2" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  Carhartt Awards $100,000 Grant to Skilled Workers
+                </h4>
+                <p class="card-text mt-3 text-muted">
+                  Carhartt is still for workers. Earlier this week in Dearborn, Michigan, the brand revealed its newest initiative, the “Steel Apple Awards.” The awards, which are an extension of the brand’s “For the Love of Labor” program, aim to honor educators and the next generation of skilled workers.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Author:</small> The Daft Collective Team
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4 my-3">
+            <div class="card border-0">
+              <img src="images/blog3.jpg" class="card-img-top" alt="blog 3" />
+              <div class="card-body">
+                <h4 class="card-title">
+                  The CASEY CASEY and Graphpaper Collab Is a Minimalist's Dream
+                </h4>
+                <p class="card-text mt-3 text-muted">
+                  Over the years, Graphpaper has solidified itself as the master of overt minimalism. Now, to celebrate a decade of its Aoyama store location, the brand has tapped Parisian-based label CASEY CASEY for a highly curated four piece capsule collection.  Let’s create something exceptional.
+                </p>
+                <p class="card-text">
+                  <small class="text-muted">Author:</small> Jordan Manlapaz
+                </p>
+                <a href="#" class="btn">Read More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- About us -->
+    <section id="about-us" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 text-center text-lg-1 order-lg-1">
+            <div class="title pt-3 pb-5">
+              <h2 class="position-relative d-inline-block">About Me</h2>
+            </div>
+            <p style="color: #dab8b8;" class="lead">
+              The Daft Collective is where fashion makes different genre and category fuse together to make another type of fashion.
+            </p>
+            <p>
+              In this store, every piece of clothing has its own story to tell. Also, it has it's own taste of reality and imagination whereas the consumer go to.
+            </p>
+          </div>
+          <div class="col-lg-6 order-lg-0">
+            <img
+              src="images/logo.png"
+              alt="about-us-imag"
+              class="img-fluid"
+              style="margin-bottom: 30px;"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+    <!-- Footer -->
+ 
+    <footer class="bg-black py-5">
+      <div class="container">
+        <div class="row text-white g-4">
+          <div class="col-md-6 col-lg-3">
+            <a href="" class="brand text-decoration-none" style="color: #dab8b8;">The Daft Collective</a>
+            <p class="text-white mt-3 text-white">
+              BowaCreatives is a virtual design platform where businesses and individuals can access professional creative services. It’s essentially a digital studio that operates 24/7, allowing clients to browse, request, and receive branding, logo design, digital illustrations, and motion graphics from anywhere with an internet connection.
+            </p>
+          </div>
+          <div class="col-md-6 col-lg-3" style="color: #dab8b8;">
+            <h5 class="fw-light">Links</h5>
+            <ul class="list-unstyled">
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-white"
+                  ><i class="fa fa-chevron-right me-1"></i>Home</a
+                >
+              </li>
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-white"
+                  ><i class="fa fa-chevron-right me-1"></i>Collection</a
+                >
+              </li>
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-white"
+                  ><i class="fa fa-chevron-right me-1"></i>Blog</a
+                >
+              </li>
+              <li class="my-3">
+                <a href="" class="text-white text-decoration-none text-white"
+                  ><i class="fa fa-chevron-right me-1"></i>About Me</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3" style="color: #dab8b8;">
+            <h5 class="fw-light mb-3">Contact Us</h5>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-white"
+            >
+              <span class="me-3"><i class="fa fa-envelope"></i></span>
+              <span class="fw-light">info@thedaftcollective.com</span>
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-white"
+            >
+              <span class="me-3"><i class="fa fa-map-marked"></i></span>
+              <span class="fw-light"
+                >Milan, Italy</span
+              >
+            </div>
+            <div
+              class="d-flex justify-content-start align-items-start my-2 text-white"
+            >
+              <span class="me-3"><i class="fa fa-phone"></i></span>
+              <span class="fw-light">09123582712</span>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3" style="color: #dab8b8;">
+            <h5 class="fw-light mb-3">Follow Us</h5>
+            <ul class="list-unstyled d-flex">
+              <li class="text-decoration-none text-white fs-4 me-4">
+                <i class="fab fa-facebook"></i></a>
+              </li>
+              <li class="text-decoration-none text-white fs-4 me-4">
+                <i class="fab fa-twitter"></i></a>
+              </li>
+              <li class="text-decoration-none text-white fs-4 me-4">
+                <i class="fab fa-instagram"></i></a>
+              </li>
+              <li class="text-decoration-none text-white fs-4 me-4">
+                <i class="fab fa-pinterest"></i></a>
+              </li>
+             
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+ 
+    <!-- ---- JQuery JS ---- -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
+    <!-- ---- Isotope JS ---- -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+ 
+    <!-- ---- Bootstrap JS ---- -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+ 
+    <!-- ---- Custom JS ---- -->
+    <script src="js/main.js"></script>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+ 
+ 
